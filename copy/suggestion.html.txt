@@ -1,0 +1,25 @@
+<div class="home">
+    <div id="suggestion_title" class="suggestions">
+        <h2>{{ post.title }}</h2>
+        <p>
+        <button id="add"><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span></button> Upvotes: {{post.upvotes}}
+        </p>
+    </div>
+    <div id="suggestion_comment" class="suggestions">
+        <ul ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+            <li>{{ comment.body }} <button id="remove"><span class="glyphicon glyphicon-remove-sign" ng-click="remove($index)"></span></button></span></li>
+            <p>
+                <button id="add"><span class="glyphicon glyphicon-plus-sign" ng-click="upvoteComments(comment)"></span></button> Upvotes: {{comment.upvotes}}
+            </p>
+        </ul>
+    </div>
+    <div class="operation">
+    <form ng-submit="addComment()" style="margin-top: 50px">
+        <h3> Submit Your Comments </h3>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Great comments here" ng-model="my_comments"></input>
+        </div>
+        <button type="submit" class="btn btn-primary">Comment</button>
+    </form>
+</div>
+</div>
