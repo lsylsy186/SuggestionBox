@@ -1,3 +1,5 @@
+This website designed by using AngularJS, html, css, javascript, which needs to be run in a Apache HTTP server.
+
 User Stories:
 What are user stories: User stories are descriptions from the perspective of the end-user meant to capture the essence of a program's features. In the case of your game, the end-user is whoever is playing your game. User stories are usually in the first-person, or in other words, "I" statements.
 
