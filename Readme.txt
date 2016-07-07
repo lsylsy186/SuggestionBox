@@ -1,5 +1,4 @@
 User Stories:
-
 What are user stories: User stories are descriptions from the perspective of the end-user meant to capture the essence of a program's features. In the case of your game, the end-user is whoever is playing your game. User stories are usually in the first-person, or in other words, "I" statements.
 
 As a user: 
@@ -18,12 +17,6 @@ Translate Ideas into code:
 * A way to input suggestions.
 * A way to upvote suggestions.
 * A way to comment on a suggestion.
-
- - Translate to :
-  * A view is going to be an HTML file, and we can feed into it a list of suggestions from a controller.
-  * To input suggestions, we will need to write a form that updates the model of our app. It will update it using a controller, since the controller is the middle-man between the view and the model.
-  * To upvote a suggestion, we can add a button that changes the amount of upvotes a specific suggestion has in the model.
-  * To comment on a suggestion, we will need to add routing to add another view. We can use similar ideas as above to build out the comments functionality.
 
 Outline:
 * Suggestion List:
@@ -50,7 +43,7 @@ Throwing More Suggestions Into The Hat:
 </form>
 *******************************************************************
 
-To add comments, we will need to:
+To add comments, I will need to:
  1. Add a new view, to show a single suggestion with the comments below it.
 	* This will involve adding routes to my app.
  2. Add comments to the suggestions.js service.
